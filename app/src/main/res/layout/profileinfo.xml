@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Profile Information"
+        android:id="@+id/ProfileInfoTitle"
+        android:layout_gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:id="@+id/profileimage"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/profileimage"
+        android:src="@drawable/profileimage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/customerNameText"
+        android:id="@+id/NameView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/customerPhoneNumber"
+        android:id="@+id/PhoneNumberView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/customerAddressText"
+        android:id="@+id/AddressView"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/customerSessions"
+        android:id="@+id/Sessions"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/session1"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Session2"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Session3"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Session4"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Session5"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addMoreSessionsButton"
+        android:id="@+id/button"
+        android:layout_gravity="right"
+        android:onClick="buyMoreSessions"
+        android:nestedScrollingEnabled="false"/>
+
+</LinearLayout>

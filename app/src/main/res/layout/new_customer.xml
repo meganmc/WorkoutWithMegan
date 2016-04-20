@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:id="@+id/profileimage"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/profileimage"
+        android:src="@drawable/profileimage"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/newCustomerName"
+        android:ems="10"
+        android:id="@+id/newCustomerName"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/newCustomerAddress"
+        android:text="@string/newCustomerAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/newCustomerPhone"
+        android:text="@string/newCustomerPhone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sessionsTextView"
+        android:text="@string/sessionsTextView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/newCustomerSessions"
+        android:text="@string/newCustomerSessions"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/addNewCustomerButton"
+        android:id="@+id/addNewCustomerButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="createNewCustomer"/>
+
+</LinearLayout>

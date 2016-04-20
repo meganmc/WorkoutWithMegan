@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Thank you for your payment. \n"
+        android:id="@+id/ThankYouTextView"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/printReceiptButton"
+        android:id="@+id/PrintReceipt"
+        android:layout_gravity="right"
+        android:onClick="printReceipt"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailEditText"
+        android:text="@string/emailEditText"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/emailReceiptButton"
+        android:id="@+id/EmailReceipt"
+        android:layout_gravity="right"
+        android:onClick="emailReceipt"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/returnHomeButton"
+        android:id="@+id/returnHome"
+        android:layout_gravity="right"
+        android:onClick="backToHome"/>
+</LinearLayout>

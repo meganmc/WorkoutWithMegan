@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/signatureTextView"
+        android:id="@+id/SignatureTextView"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.gesture.GestureOverlayView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/signatureGesture"
+        android:layout_gravity="center_horizontal"
+        android:gestureColor="#000000"
+        android:orientation="vertical"
+        android:gestureStrokeLengthThreshold="0.1"
+        android:gestureStrokeType="multiple">
+    </android.gesture.GestureOverlayView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signatureButton"
+        android:id="@+id/signatureButton"
+        android:layout_gravity="right"
+        android:onClick="sendSignature"/>
+</LinearLayout>

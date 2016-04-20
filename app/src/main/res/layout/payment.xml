@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <TextView
+        android:layout_width="266dp"
+        android:layout_height="126dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:text="@string/paymentInfoText"
+        android:id="@+id/paymentInfo"
+        android:layout_gravity="right"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CreditPayment"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/creditPaymentText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="@string/creditCardName"
+        android:ems="10"
+        android:id="@+id/CreditCardName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:text="@string/creditCardNumber"
+        android:id="@+id/CardNumber"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:text="@string/securityCodeNumber"
+        android:id="@+id/SecurityCode"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/BillingAddress"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/billingAddressText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitPaymentButton"
+        android:id="@+id/submitPayment"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitPayment"/>
+
+
+</LinearLayout>

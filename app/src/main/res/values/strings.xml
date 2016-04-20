@@ -6,19 +6,70 @@
     <string name="username">Jdoe</string>
     <string name="password">welcome1</string>
     <string name="title_activity_launch">Sign in</string>
+    <string name="login_button">Login</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password (optional)</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_username">This username is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="profileimage">User Profile Photo</string>
+    <string name="usernameText">Username</string>
+
+    <!-- new_customer.xml -->
+    <string name="sessionsTextView">Sessions this Month:</string>
+    <string name="newCustomerSessions">Number of Sessions to Purchase</string>
+    <string name="addNewCustomerButton">Add New Customer</string>
+    <string name="newCustomerPhone">Phone Number</string>
+    <string name="newCustomerAddress">Address</string>
+    <string name="newCustomerName">Name</string>
+
+    <!-- signature.xml -->
+    <string name="signatureTextView">Sign Below</string>
+    <string name="signatureButton">Submit Signature</string>
+
+    <!-- customerlist.xml -->
+    <string name="customerList"></string>
+
+    <!-- loggedin_Fragment.xml -->
+    <string name="loggedInFragment">Logged in: @string/Username</string>
+
+    <!-- receipt.xml -->
+    <string name="printReceiptButton">Print Receipt</string>
+    <string name="emailEditText">Enter e-mail</string>
+    <string name="emailReceiptButton">Email Receipt</string>
+
+    <string name="returnHomeButton">Back to Home</string>
+
+    <!--payment.xml -->
+    <string name="paymentInfoText">
+        Price Per Session: $15\n\Number of Sessions: 5\n\Total: $75</string>
+    <string name="creditPaymentText">Credit Card Payment Info</string>
+    <string name="creditCardName">Name On Card</string>
+    <string name="creditCardNumber">Card Number</string>
+    <string name="securityCodeNumber">Security Code</string>
+    <string name="billingAddressText">Billing Address</string>
+    <string name="submitPaymentButton">Submit Payment</string>
+
+
+    <!-- profileinfo.xml -->
+    <string name="customerNameText">First and Last Name</string>
+    <string name="customerPhoneNumber">Phone Number</string>
+    <string name="customerAddressText">Address</string>
+    <string name="customerSessions">Sessions:</string>
+    <string name="addMoreSessionsButton">Add More Sessions</string>
+
+
+
+
 
 
 </resources>
