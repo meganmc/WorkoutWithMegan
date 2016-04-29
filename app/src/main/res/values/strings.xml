@@ -21,12 +21,13 @@
         completions."
     </string>
 
+    <!-- login -->
     <string name="profileimage">User Profile Photo</string>
     <string name="usernameText">Username</string>
+    <string name="passwordText">Password</string>
 
     <!-- new_customer.xml -->
-    <string name="sessionsTextView">Sessions this Month:</string>
-    <string name="newCustomerSessions">Number of Sessions to Purchase</string>
+    <string name="newEmail">Email</string>
     <string name="addNewCustomerButton">Add New Customer</string>
     <string name="newCustomerPhone">Phone Number</string>
     <string name="newCustomerAddress">Address</string>
@@ -38,6 +39,7 @@
 
     <!-- customerlist.xml -->
     <string name="customerList"></string>
+    <string name="newCustomerBtn">Add New Customer</string>
 
     <!-- loggedin_Fragment.xml -->
     <string name="loggedInFragment">Logged in: @string/Username</string>
@@ -68,8 +70,16 @@
     <string name="addMoreSessionsButton">Add More Sessions</string>
 
 
+    <!-- menu_options_menu.xml -->
+    <string name="menu_log_off">Log Off</string>
+    <string name="title_activity_customer_list">CustomerListActivity</string>
 
-
+    <!-- listview.xml-->
+    <string name="LVname">Full Name</string>
+    <string name="LVphone">Phone Number</string>
+    <string name="LVaddress">Address</string>
+    <string name="LVemail">Email</string>
+    <string name="LVimage">Image</string>
 
 
 </resources>

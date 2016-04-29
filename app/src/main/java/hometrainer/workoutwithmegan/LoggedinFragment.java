@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.ListFragment;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,26 +14,31 @@ import hometrainer.workoutwithmegan.R;
 /**
  * Created by meganmcdonald on 4/20/16.
  */
-public class LoggedinFragment extends ListFragment {
+public class LoggedinFragment extends Fragment {
+   // private User mUser;
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //mUser = new User();
+    }
+
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         //reference the parent activity
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        //initialize fragment
-    }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.loggedin_fragment,
+        View v = inflater.inflate(R.layout.loggedin_fragment,
                 container, false);
 
-        return view;
+        return v;
         //inflate view that fragment contains - UI and return it
         //get reference to any UI components
         //bind data

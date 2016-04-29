@@ -16,7 +16,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:text="@string/newCustomerName"
         android:ems="10"
         android:id="@+id/newCustomerName"
@@ -25,7 +24,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPostalAddress"
         android:ems="10"
         android:id="@+id/newCustomerAddress"
         android:text="@string/newCustomerAddress"/>
@@ -33,7 +31,6 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
         android:ems="10"
         android:id="@+id/newCustomerPhone"
         android:text="@string/newCustomerPhone"/>
@@ -41,16 +38,8 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/sessionsTextView"
-        android:text="@string/sessionsTextView"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/newCustomerSessions"
-        android:text="@string/newCustomerSessions"/>
+        android:id="@+id/newEmail"
+        android:text="@string/newEmail"/>
 
     <Button
         android:layout_width="wrap_content"

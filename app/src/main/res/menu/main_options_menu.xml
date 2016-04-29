@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="hometrainer.workoutwithmegan.FirstActivity">
+
     <item android:id="@+id/log_off_menu_item"
-          android:title="Log Off">
+          android:title="@string/menu_log_off"
+        android:onClick="logOff"
+        >
     </item>
 
 </menu>
