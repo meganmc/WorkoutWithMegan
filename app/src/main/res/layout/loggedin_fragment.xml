@@ -4,11 +4,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <fragment
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:name="hometrainer.workoutwithmegan.LoggedinFragment"
-        android:id="@+id/fragment"
+        android:id="@+id/fragmentLogin"
         android:text="@string/loggedInFragment"
-        android:layout_gravity="center_horizontal"/>
+        />
 </LinearLayout>

@@ -31,14 +31,16 @@
     <string name="addNewCustomerButton">Add New Customer</string>
     <string name="newCustomerPhone">Phone Number</string>
     <string name="newCustomerAddress">Address</string>
-    <string name="newCustomerName">Name</string>
+    <string name="newCustomerName">Full Name</string>
+    <string name="backBtn">Back to Customers</string>
+    <string name="photoBtn">Take Photo</string>
 
     <!-- signature.xml -->
     <string name="signatureTextView">Sign Below</string>
     <string name="signatureButton">Submit Signature</string>
 
     <!-- customerlist.xml -->
-    <string name="customerList"></string>
+    <string name="customerList">Customer List</string>
     <string name="newCustomerBtn">Add New Customer</string>
 
     <!-- loggedin_Fragment.xml -->

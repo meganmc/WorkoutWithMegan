@@ -8,6 +8,9 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import hometrainer.workoutwithmegan.R;
 
@@ -16,6 +19,7 @@ import hometrainer.workoutwithmegan.R;
  */
 public class LoggedinFragment extends Fragment {
    // private User mUser;
+    private TextView loggedIn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,7 @@ public class LoggedinFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.loggedin_fragment,
                 container, false);
+        loggedIn = (TextView) v.findViewById(R.id.fragmentLogin);
 
         return v;
         //inflate view that fragment contains - UI and return it

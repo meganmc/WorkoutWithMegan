@@ -1,8 +1,11 @@
 package hometrainer.workoutwithmegan;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -16,7 +19,7 @@ import java.util.List;
 
 import hometrainer.workoutwithmegan.database.Customer;
 
-public class CustomerListActivity extends Activity {
+public class CustomerListActivity extends FragmentActivity {
 
 
     Button newCustomer;
@@ -53,6 +56,8 @@ public class CustomerListActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.customerlist);
         populateUsersList();
+        android.support.v4.app.FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(R.id.fragmentLogin);
 /*
         customerDB = new ArrayList<>();
 

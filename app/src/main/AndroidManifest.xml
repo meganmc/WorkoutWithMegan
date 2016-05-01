@@ -2,6 +2,9 @@
 <manifest package="hometrainer.workoutwithmegan"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true"></uses-feature>
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
@@ -34,10 +37,30 @@
         </activity>
         <activity android:name=".new_customer_activity"
                   android:label="NewCustomerActivity"
-                  android:theme="@style/AppTheme.NoActionBar">
-
+                  android:theme="@style/AppTheme">
         </activity>
 
+        <activity android:name=".Payment_Activity"
+                  android:label="PaymentActivity"
+                  android:theme="@style/AppTheme">
+            </activity>
+        <activity android:name=".Profile_Info_Activity"
+                  android:label="ProfileInfoActivity"
+                  android:theme="@style/AppTheme">
+            </activity>
+        <activity android:name=".Reciept_Activity"
+                  android:label="ReceiptActivity"
+                  android:theme="@style/AppTheme">
+            </activity>
+        <activity android:name=".Signature_Activity"
+                  android:label="SignatureActivity"
+                  android:theme="@style/AppTheme">
+            </activity>
+        <activity android:name=".mainMenuOptionsActivity"
+                  android:label="MainMenuOptions"
+                  android:theme="@style/AppTheme"></activity>
+
     </application>
+
 
 </manifest>
