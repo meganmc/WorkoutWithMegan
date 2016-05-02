@@ -18,6 +18,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.io.File;
+
 import hometrainer.workoutwithmegan.Customers;
 
 /**
@@ -27,10 +29,13 @@ public class new_customer_activity extends Activity {
 
     Button addNewCustomer, backBtn;
     ImageButton photoBtn;
-    EditText name, address, phone, email;
-
+    EditText name;
+    EditText address;
+    EditText phone;
+    EditText email;
     ImageView profilePhoto;
     SharedPreferences savedContact;
+    static final int REQUEST_IMAGE_CAPTURE = 1;
 
 
     @Override
@@ -48,10 +53,11 @@ public class new_customer_activity extends Activity {
         photoBtn = (ImageButton) findViewById(R.id.photoBtn);
 
 
+
         addNewCustomer.setOnClickListener(new View.OnClickListener() {
             @Override
-        public void onClick(View v) {
-                saveNewContact(getApplicationContext(), name, address, phone, email);
+            public void onClick(View v) {
+                //saveNewContact(getApplicationContext(), name, address, phone, email);
                 Intent intent = new Intent(new_customer_activity.this, CustomerListActivity.class);
                 Toast.makeText(getApplicationContext(), "Saving to Customer List...", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
@@ -68,25 +74,29 @@ public class new_customer_activity extends Activity {
 
 
         //click on picture to take photo
-
-
         photoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
         public void onClick(View v) {
+                takePicture();
                 Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-            }
-        });
 
-    }
+            }
+        });}
+
+
+
 
 
    private void takePicture() {
-        // Check Camera
+       Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+       if(takePictureIntent.resolveActivity(getPackageManager()) != null) {
+           startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+       }
+ /*
 
         if (getApplicationContext().getPackageManager().hasSystemFeature(
                 PackageManager.FEATURE_CAMERA)) {
-
 
             fileUri = Uri.fromFile(filePicture);
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -98,26 +108,24 @@ public class new_customer_activity extends Activity {
             startActivityForResult(intent, 100);
         } else {
             Toast.makeText(getApplication(), "Camera not supported", Toast.LENGTH_SHORT).show();
-        }
-    }
-*/
-
+        }*/
     }
 
-    public static void saveNewContact(Context context, String name, String address, String phone, String email) {
+
+    /*public static void saveNewContact(Context context, String name, String address, String phone, String email) {
         SharedPreferences prefs = context.getSharedPreferences("hometrainer", 0);
         SharedPreferences.Editor editor = prefs.edit();
-        //editor.putString();
+        editor.putString(newCustomer);
 
-        //name = name.getText().toString();
-        //address = address.getText().toString();
-        //phone = phone.getText().toString();
-        //email = email.getText().toString();
-        //Customers newCustomer = new Customers(name, address, phone, email);
-        //return newCustomer;
+        name = name.getText().toString();
+        address = address.getText().toString();
+        phone = phone.getText().toString();
+        email = email.getText().toString();
+        Customers newCustomer = new Customers(name, address, phone, email);
+        return newCustomer;
 
     }
-
+*/
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_options_menu, menu);
@@ -138,10 +146,3 @@ public class new_customer_activity extends Activity {
         super.onPause();
     }
 }
-
-
-
-   /* public void createNewCustomer(View view) {
-        Intent intent = new Intent(new_customer_activity.this, )
-    }*/
-//}
