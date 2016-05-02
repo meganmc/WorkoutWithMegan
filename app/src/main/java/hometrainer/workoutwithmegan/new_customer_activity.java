@@ -112,20 +112,15 @@ public class new_customer_activity extends Activity {
     }
 
 
-    /*public static void saveNewContact(Context context, String name, String address, String phone, String email) {
+    public static void saveNewContact(Context context, String name, String address, String phone, String email) {
         SharedPreferences prefs = context.getSharedPreferences("hometrainer", 0);
         SharedPreferences.Editor editor = prefs.edit();
-        editor.putString(newCustomer);
 
-        name = name.getText().toString();
-        address = address.getText().toString();
-        phone = phone.getText().toString();
-        email = email.getText().toString();
         Customers newCustomer = new Customers(name, address, phone, email);
-        return newCustomer;
+        editor.putString(name, newCustomer.toString());
 
     }
-*/
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_options_menu, menu);

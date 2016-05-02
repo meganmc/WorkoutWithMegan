@@ -30,5 +30,8 @@ public class Customers {
         return customers;
     }
 
-
+    @Override
+    public String toString(){
+        return this.name + "\t" + this.address + "\t" + this.email + "\t" + this.phone;
+    }
 }
