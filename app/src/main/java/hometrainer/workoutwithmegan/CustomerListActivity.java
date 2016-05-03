@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -93,8 +94,9 @@ public class CustomerListActivity extends FragmentActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_options_menu, menu);
-        // menu.findItem(R.menu.main_options_menu).setIntent(
-        //        new Intent(login.this, SettingsActivity.class));
+        menu.findItem(R.menu.main_options_menu).setIntent(
+                new Intent(CustomerListActivity.this, login.class));
+        Toast.makeText(getApplicationContext(), "Logging You Off...", Toast.LENGTH_SHORT).show();
         return true;
     }
 
